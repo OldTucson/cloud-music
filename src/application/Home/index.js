@@ -7,6 +7,7 @@ import {
 } from './style';
 import { NavLink } from 'react-router-dom';//利用NavLink组件进行路由跳转
 import Player from '../Player';
+import Comments from '../Comments';
 
 function Home(props){
   const { route } = props;
@@ -25,6 +26,8 @@ function Home(props){
       </Tab>
       { renderRoutes(route.routes) }
       <Player></Player>
+      <Comments></Comments>
+
     </div>
   );
 }

@@ -17,6 +17,7 @@ import animations from "create-keyframe-animation";
 import ProgressBar from "../../../baseUI/progress-bar";
 import { playMode } from './../../../api/config';
 import Scroll from "../../../baseUI/scroll";
+import {changeCommentId} from '../../Comments/store/actionCreators'
 
 function NormalPlayer(props) {
   const {
@@ -49,7 +50,7 @@ function NormalPlayer(props) {
   const lyricLineRefs = useRef([]);
   
   const transform = prefixStyle("transform");
-
+  
   useEffect(() => {
     if (!lyricScrollRef.current) return;
     let bScroll = lyricScrollRef.current.getBScroll();

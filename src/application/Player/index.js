@@ -296,7 +296,7 @@ const mapDispatchToProps = dispatch => {
     },
     changePlayListDispatch(data) {
       dispatch(changePlayList(data));
-    }
+    },
   };
 };
 
